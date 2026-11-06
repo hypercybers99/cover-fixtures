@@ -1,18 +1,14 @@
 # Nimbus Cloud System Status
 
 **Current incident**
-Incident: No active incidents.
-Status: All systems operational. No incident in progress.
-Duration: 0 minutes.
+Incident: Intermittent gateway timeouts.
+Status: Major outage.
+Duration: 20 minutes.
 
-### System Components
-- API Gateway: Operational
-- Authentication Service: Operational
-- Database Clusters: Operational
-- Object Storage Service: Operational
-
-All cloud regions are reporting nominal latency and zero elevated error rates.
-Routine maintenance window completed earlier today with no disruption to services.
-
+### Incident Details
+A transient fiber disruption between availability zones caused brief gateway partition.
+Traffic has been re-routed via secondary backbones and telemetry is stabilizing.
+Engineering teams continue to observe metrics to ensure sustained operational health.
+Full post-mortem report will follow our standard incident management review.
 
 <!-- Instance: mutable-p3 -->

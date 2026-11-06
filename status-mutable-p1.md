@@ -1,18 +1,14 @@
 # Nimbus Cloud System Status
 
 **Current incident**
-Incident: No active incidents.
-Status: All systems operational. No incident in progress.
-Duration: 0 minutes.
+Incident: API errors across multiple availability zones.
+Status: Major outage.
+Duration: 75 minutes.
 
-### System Components
-- API Gateway: Operational
-- Authentication Service: Operational
-- Database Clusters: Operational
-- Object Storage Service: Operational
-
-All cloud regions are reporting nominal latency and zero elevated error rates.
-Routine maintenance window completed earlier today with no disruption to services.
-
+### Incident Details
+Engineers are actively investigating elevated 500 error rates on public API endpoints.
+Upstream network routing tables are being rebuilt and traffic is rerouted.
+Core services including compute workers and event streams are currently impacted.
+Next update will be published within 15 minutes.
 
 <!-- Instance: mutable-p1 -->

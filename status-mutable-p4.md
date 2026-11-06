@@ -1,18 +1,14 @@
 # Nimbus Cloud System Status
 
 **Current incident**
-Incident: No active incidents.
-Status: All systems operational. No incident in progress.
-Duration: 0 minutes.
+Incident: Latency spike in storage subsystem.
+Status: Degraded performance.
+Duration: 90 minutes.
 
-### System Components
-- API Gateway: Operational
-- Authentication Service: Operational
-- Database Clusters: Operational
-- Object Storage Service: Operational
-
-All cloud regions are reporting nominal latency and zero elevated error rates.
-Routine maintenance window completed earlier today with no disruption to services.
-
+### Incident Details
+Storage nodes in us-east region are experiencing elevated read latencies under peak load.
+Background indexing tasks have been throttled to restore throughput for customer operations.
+Read and write requests continue to succeed although response latencies are elevated.
+Our engineering team is actively tuning cache parameters to alleviate contention.
 
 <!-- Instance: mutable-p4 -->
